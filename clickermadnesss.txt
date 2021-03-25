@@ -1,0 +1,549 @@
+--made by Talene on v3rmillion.net // https://v3rmillion.net/member.php?action=profile&uid=1839334
+
+local Library =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AimbotTab = Library:CreateTab("Autofarm", "This is where you modify the Autofarm", true)
+AimbotTab:CreateToggle(
+    "Auto Click",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(11301301301)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+AimbotTab:CreateToggle(
+    "TP Gems/Clicks",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.Workspace.ScriptObjects.BasePickup.HumanoidRootPart.CFrame =
+                    game.Workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+AimbotTab:CreateToggle(
+    "Auto Rebirth",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(200)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+AimbotTab:CreateToggle(
+    "Auto Boss",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.Workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                    game.Workspace.ScriptObjects["Karen Keyboard"].HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.CursorCannonService.FireBoss:FireServer("Karen Keyboard")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+AimbotTab:CreateToggle(
+    "Kill All",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+
+                for i, v in pairs(game.Players:GetChildren()) do
+                    if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+                        local A_1 = game:GetService("Players")[v.Name]
+                        local Event =
+                            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CursorCannonService.FireCursor
+                        Event:FireServer(A_1)
+                    end
+                end
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+AimbotTab:CreateToggle(
+    "Auto Koth",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(547.127502, 32.5409851, -176.321243)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+local Lol = Library:CreateTab("Eggs", "lmao", true)
+
+Lol:CreateToggle(
+    "Basic Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("basic")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Winter Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("winter")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Future Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("future")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Infinity Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("infinity")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Dominus Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("dominus")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Toxic Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("toxic")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Ocean Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("ocean")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Lava Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("lava")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Desert Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("desert")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Storm Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("storm")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Blocky Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("blocky")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Forest Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("forest")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Candy Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("candy")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Fire Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("fire")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "Moon Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("moon")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Lol:CreateToggle(
+    "City Egg",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.EggService.Purchase:FireServer("city")
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+local retard = Library:CreateTab("Teleports", "teleport wdym", true)
+
+retard:CreateButton(
+    "Desert Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+            CFrame.new(
+            2204.55737,
+            6.57587671,
+            1086.60547,
+            0.0209632441,
+            1.03658763e-07,
+            0.999780238,
+            6.93668012e-09,
+            1,
+            -1.03826999e-07,
+            -0.999780238,
+            9.11170606e-09,
+            0.0209632441
+        )
+    end
+)
+
+retard:CreateButton(
+    "Winter Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+            CFrame.new(
+            -2284.03174,
+            6.64231157,
+            409.820923,
+            -0.00669093151,
+            -4.41522445e-08,
+            0.999977589,
+            2.24042007e-09,
+            1,
+            4.41682246e-08,
+            -0.999977589,
+            2.53589638e-09,
+            -0.00669093151
+        )
+    end
+)
+
+retard:CreateButton(
+    "Lava Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+            CFrame.new(
+            -1778.85901,
+            6.59178734,
+            -734.607788,
+            -0.0222757887,
+            -7.14996133e-08,
+            0.999751866,
+            4.20286526e-08,
+            1,
+            7.24538154e-08,
+            -0.999751866,
+            4.36321912e-08,
+            -0.0222757887
+        )
+    end
+)
+
+retard:CreateButton(
+    "Toxic Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1764.57153, 6.86970186, -2041.34265)
+    end
+)
+
+retard:CreateButton(
+    "Ocean Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-257.548981, 9.33240128, 2156.74756)
+    end
+)
+
+retard:CreateButton(
+    "Storm Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-283.010529, 7.86651325, -2684.97876)
+    end
+)
+
+retard:CreateButton(
+    "Candy Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1340.12842, 6.19549131, -2243.80469)
+    end
+)
+
+retard:CreateButton(
+    "Space Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2394.70557, 6.46428347, 2944.65161)
+    end
+)
+
+retard:CreateButton(
+    "Forest Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1754.69958, 6.48348618, 3258.69409)
+    end
+)
+
+retard:CreateButton(
+    "City Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-981.488586, 6.50434256, 1033.67212)
+    end
+)
+
+retard:CreateButton(
+    "Blocky Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2915.13086, 9.11157703, -782.432373)
+    end
+)
+
+retard:CreateButton(
+    "Future Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1066.15564, 6.42351246, 519.671448)
+    end
+)
+
+retard:CreateButton(
+    "Dominus Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1031.78345, 6.4810214, 2254.1189)
+    end
+)
+
+retard:CreateButton(
+    "Infinity Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2264.68188, 6.81607246, -1765.96082)
+    end
+)
+
+retard:CreateButton(
+    "Moon Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2394.26953, 6.43621302, 1972.31152)
+    end
+)
+
+retard:CreateButton(
+    "Fire Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2263.49316, 6.54389572, -733.008667)
+    end
+)
+
+retard:CreateButton(
+    "Vip Island",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(519.011414, 9.76168537, -1329.76868)
+    end
+)
+local omg = Library:CreateTab("Auto Upgrade", "o", true)
+omg:CreateToggle(
+    "Auto Normal Upgrades",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+
+                local A_1 = "ClickMultiply"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+
+                local A_1 = "CursorDamage"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+
+                local A_1 = "Health"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+
+                local A_1 = "JumpPower"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+
+                local A_1 = "WalkSpeed"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+
+                local A_1 = "PetStorage"
+                local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade
+                Event:FireServer(A_1)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
