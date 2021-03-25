@@ -1,6 +1,5 @@
 --made by Talene on v3rmillion.net // https://v3rmillion.net/member.php?action=profile&uid=1839334
---updated by Amphetamine#0549 (301719680622788630)
-
+--updated by Amphetamine#0549 301719680622788630
 local Library =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
 
@@ -12,7 +11,7 @@ AimbotTab:CreateToggle(
             _G.toggled = true
             while _G.toggled == true do
                 wait(0)
-                game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(11301301301)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(10)
             end
         else
             _G.toggled = false
@@ -29,21 +28,6 @@ AimbotTab:CreateToggle(
                 wait(0)
                 game.Workspace.ScriptObjects.BasePickup.HumanoidRootPart.CFrame =
                     game.Workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame
-            end
-        else
-            _G.toggled = false
-        end
-    end
-)
-
-AimbotTab:CreateToggle(
-    "Auto Rebirth",
-    function(arg)
-        if arg then
-            _G.toggled = true
-            while _G.toggled == true do
-                wait(0)
-                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(200)
             end
         else
             _G.toggled = false
@@ -100,6 +84,277 @@ AimbotTab:CreateToggle(
                 wait(0)
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                     CFrame.new(547.127502, 32.5409851, -176.321243)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+local Rebirth = Library:CreateTab("Auto Rebirth", "This is where you modify the Auto Rebirth", true)
+
+Rebirth:CreateToggle(
+    "1",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "1k",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10k",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100k",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "1m",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10m",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100m",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "1b",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10b",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100b",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "1t",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10t",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100t",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "1q",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "10q",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000000000000)
+            end
+        else
+            _G.toggled = false
+        end
+    end
+)
+
+Rebirth:CreateToggle(
+    "100q",
+    function(arg)
+        if arg then
+            _G.toggled = true
+            while _G.toggled == true do
+                wait(0)
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000000000000000)
             end
         else
             _G.toggled = false
